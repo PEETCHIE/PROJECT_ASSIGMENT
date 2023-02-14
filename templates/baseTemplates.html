@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+{% load fontawesome_5 %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="{% static 'styleSheet/bt523/css/bootstrap.css' %}">
+    <script src="{% static 'styleSheet/bt523/js/bootstrap.bundle.js' %}"></script>
+    <title>224 CHAIANAN</title>
+</head>
+<body class="container-fluid">
+
+        <div class="row">
+                <div class="col" style="background-color: #3E774A; font-family: Kanit">
+                    {% include 'header.html' %}
+                </div>
+
+        </div>
+        <div class="row" style="background-color: #8EC99E; font-family: Kanit">
+                {% block content %}
+
+                {% endblock %}
+        </div>
+</body>
+</html>

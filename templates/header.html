@@ -1,0 +1,52 @@
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+<div class="row">
+
+    <div class="col-3">
+
+    </div>
+    <div class="col-6 text-center">
+        <p style="font-size: 36px; font-family: Kanit">
+            CHAIANAN SIMACHAI
+        </p>
+        <p style="font-size: 16px; font-family: Kanit" class="text-center text-white">
+            Rajamangala University of Technology Isan Khonkaen Campus <br>
+            มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น
+        </p>
+    </div>
+
+    <div class="col-3">
+        <img src="{% static "images/RMUTI_KORAT.png"%}" width=80 height="130">
+    </div>
+</div>
+<ul class="nav justify-content-center rounded-5 " style="background-color: #EAEAEA; font-family: Kanit">
+  <li class="nav-item">
+      <a class="nav-link text-success" href="{% url 'Home' %}"><i class="fas fa-home"></i><b>  หน้าหลัก</b></a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'PersonalRecord' %}"><i class="fas fa-user"></i><b>  ประวัติส่วนตัว</b></a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'EducationRecord' %}"><i class="fas fa-university"></i><b>  ประวัติการศึกษา</b></a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'interest' %}"><i class="fas fa-bell"></i><b>  สิ่งที่สนใจ</b></a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'productsale' %}"><i class="fab fa-product-hunt"></i><b>  สินค้านำเสนอขาย</b></a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'roleModel' %}"><i class="fas fa-user-circle"></i><b>  บุคคลต้นแบบ</b></a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link text-success" href="{% url 'showMyData' %}"><i class="fas fa-database"></i><b>  Show my DATA</b></a>
+  </li>
+
+</ul>

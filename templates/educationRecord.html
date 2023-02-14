@@ -1,0 +1,60 @@
+{% extends 'baseTemplates.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% block content %}
+    <body>
+    <div class="col-4">
+    </div>
+
+    <h1 class="rounded-3 text-center text-white col-4" style="background-color: #549162"><b>ประวัติการศึกษา</b>
+    </h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 text-center rounded-5 text-dark" style="background-color: #549162">
+                <h1>ระดับอนุบาล</h1>
+                <p>โรงเรียนบ้านหนองขามค่ายเสนีย์อุปถัมภ์ จังหวัดอุดรธานี</p>
+                <img src="{% static "images/bannongkham-removebg-preview.png"%}" width="300" height="300">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 text-center rounded-5 text-white" style="background-color: #549162">
+                <h1>ระดับประถามศึกษาปีที่ 1 ถึง 6</h1>
+                <p>โรงเรียนบ้านหนองขามค่ายเสนีย์อุปถัมภ์ จังหวัดอุดรธานี</p>
+                <img src="{% static "images/bannongkham-removebg-preview.png"%}" width="300" height="300">
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 text-center rounded-5 text-white" style="background-color: #549162">
+                <h1>ระดับมัธยมต้น</h1>
+                <p>โรงเรียนประจักษ์ศิลปาคาร จังหวัดอุดรธานี</p>
+                <img src="{% static "images/prajak.jpg"%}" width="600" height="150"><br><br>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 text-center rounded-5 text-dark" style="background-color: #549162">
+                <h1>ระดับประกาศณียบัตรวิชาชีพ</h1>
+                <p>วิทยาลัยเทคโนโลยีสันตพล จังหวัดอุดรธานี</p>
+                <img src="{% static "images/download-removebg-preview.png"%}" width="300" height="300">
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-6 text-center rounded-5 text-dark" style="background-color: #549162">
+                <h1>ระดับประกาศณียบัตรวิชาชีพ ขั้นสูง</h1>
+                <p>วิทยาลัยเทคนิคอุดรธานี จังหวัดอุดรธานี</p>
+                <img src="{% static "images/technic-removebg-preview.png"%}" width="300" height="300">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 text-center rounded-5 text-white" style="background-color: #549162">
+                <h1>ปัจจุบันศึกษาที่</h1>
+                <p>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น จังหวัดขอนแก่น</p>
+                <img src="{% static "images/rmuti.png"%}" width="650" height="150">
+            </div>
+        </div><br><br><br><br><br><br><br>
+    </div>
+    </body>
+{% endblock %}

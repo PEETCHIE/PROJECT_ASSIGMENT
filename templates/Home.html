@@ -1,0 +1,22 @@
+{% extends 'baseTemplates.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% block content %}
+    <body style="font-family: Kanit">
+    <br>
+    <h1 class="text-center">Welcome to my website</h1>
+    <div class="container">
+        <div class="row">
+            <center>
+            <div class="col-5 text-center rounded-3" style="background-color: #549162">
+                <p style="color: white; font-size: 18px;">Hello my name is chaianan <br>
+                    This is my website happy to day</p>
+            </div>
+            </center>
+        </div>
+        <br>
+        <img src="{% static "images/MY WEBSITE.png" %}" width="1500" height="650">
+
+    </div>
+    </body>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'baseTemplates.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% block content %}
+    <body>
+    <div class="col-4">
+    </div>
+
+    <h1 class="rounded-3 text-center text-white col-4" style="background-color: #549162; font-family: Kanit"><b>ประวัติส่วนตัว</b>
+    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 rounded-5 text-center text-dark" style="background-color: #549162;">
+                <br><br><h5>ชื่อ-นามสกุล ภาษาไทย: ชัยอนันต์ สิมาชัย</h5>
+                <h5>ชื่อ-นามสกุล ภาษาอังกฤษ: Chaianan Simachai</h5><br>
+                <h5>ชื่อเล่น: พีท</h5>
+                <h5>วัน/เดือน/ปีเกิด: วันพุธ ที่ 20 เดือนมิถุนายน พ.ศ.2544</h5><br>
+                <h5>ที่อยู่: 130 หมู่ 3 บ้านนาทราย ตำบลหนองบัว อำเภอเมืองอุดรธานี จังหวัดอุดรธานี 41000</h5><br>
+                <h5>เบอร์โทรศัพท์: 098-1832194</h5><br>
+                <h5>Facebook : Chaianan Simachai</h5><br>
+                <h5>Instagram: _peetchie_</h5>
+            </div>
+
+            <div class="col-lg-6">
+                <center>
+                    <img src="{% static 'images/im7.jpg' %}" width="380" height="450" class="rounded-2">
+                </center>
+            </div>
+        </div>
+        <br><br>
+        <div class="row" style="font-size: 18px">
+            <div class="col-12 text-center rounded-5" style="background-color: #549162"><br>
+                <h5><b>กีฬาที่ชอบ</b></h5>
+                <p>บาสเก็ตบอล</p>
+                <img src="{% static 'images/basketball.gif' %}" width="280" height="250">
+                <h5><b>วงดนตรีที่ชอบ</b></h5>
+                <p>คณะขวัญใจ เรนิษรา taitosmith</p>
+            </div>
+        </div>
+
+
+    </div>
+    </body>
+{% endblock %}
