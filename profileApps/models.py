@@ -10,4 +10,8 @@ class Product:
         self.productColor = color
         self.productPrice = price
         self.productAmount = amount
-        self.productNet = self.productPrice * self.productAmount
+
+
+    def __str__(self):
+        return "ID : {}, NAME : {}, BRAND : {}, COLOR : {}, PRICE : {}, AMOUNT : {}"\
+            .format(self.productId, self.productName, self.productBrand, self.productColor, self.productPrice, self.productAmount)

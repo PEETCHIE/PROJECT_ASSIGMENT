@@ -1,0 +1,51 @@
+{% extends 'baseTemplates.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+<h1 class="text-center text-secondary bg-primary">Product Information</h1>
+    <table class="table table-warning table-striped table-hover">
+        <tr>
+            <th>PRODUCT ID</th>
+            <th>PRODUCT NAME</th>
+            <th>PRODUCT BRAND</th>
+            <th>PRODUCT COLOR</th>
+            <th>PRODUCT PRICE</th>
+            <th>PRODUCT AMOUNT</th>
+        </tr>
+
+    {% for employee in employees %}
+        <tr>
+            <td>{{ employee.empId }}</td>
+            <td>{{ employee.empName }}</td>
+            <td>{{ employee.empSurname }}</td>
+            <td>{{ employee.division }}</td>
+            <td>{{ employee.status }}</td>
+            <td>{{ employee.salary }}</td>
+        </tr>
+    {% endfor %}
+
+
+    </table>
+    <div class="row">
+        <div class="col-6 text-lg-start">
+              <a href="{% url 'home' %}" class="btn btn-primary">
+        <i class="fas fa-home"></i> HOME
+    </a>
+        </div>
+
+        <div class="col-6 text-lg-start">
+              <a href="{% url 'newEmployeeNormal' %}" class="btn btn-success">
+        <i class="fas fa-user-edit"></i> New Employee Normal
+            </a>
+
+            <a href="{% url 'newEmployeeForm' %}" class="btn btn-success">
+        <i class="fas fa-user-edit"></i> New Employee Normal(Forms)
+            </a>
+        </div>
+
+    </div>
+
+    <br><br>
+
+{% endblock %}
